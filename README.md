@@ -23,6 +23,7 @@ function mayusculizar(palabra) {
 
 ### Integrantes
 - **[Angel Marcos Montes](https://github.com/Angel45604)**
+- **[Evelyn Mejia Orozco](https://github.com/Evelyn135)**
 
 ## Python 2
 - **[Otro chavo](https://megustanlosmemes.com)**
