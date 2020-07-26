@@ -23,6 +23,9 @@ function mayusculizar(palabra) {
 
 ### Integrantes
 - **[Angel Marcos Montes](https://github.com/Angel45604)**
+- **[Yoltic Uriel Palomino Ortega](https://github.com/urielpalomino)**
 
 ## Python 2
+### Integrantes
 - **[Otro chavo](https://megustanlosmemes.com)**
+- **[Yoltic Uriel Palomino Ortega](https://github.com/urielpalomino)**
