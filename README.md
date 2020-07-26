@@ -25,4 +25,4 @@ function mayusculizar(palabra) {
 - **[Angel Marcos Montes](https://github.com/Angel45604)**
 
 ## Python 2
-- **[Otro chavo](https://megustanlosmemes.com)**
+- **[Pérez Tovar Ana Elisa](https://github.com/ElisaTovar)**
