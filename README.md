@@ -20,9 +20,15 @@ function mayusculizar(palabra) {
 ```
 - ####Ejercicio 2
     
-
+## Javascript 2
 ### Integrantes
 - **[Angel Marcos Montes](https://github.com/Angel45604)**
+- **[Yoltic Uriel Palomino Ortega](https://github.com/urielpalomino)**
+- **[Pérez Tovar Ana Elisa](https://github.com/ElisaTovar)**
 
 ## Python 2
-- **[Pérez Tovar Ana Elisa](https://github.com/ElisaTovar)**
+=======
+### Integrantes
+- **[Otro chavo](https://megustanlosmemes.com)**
+- **[Yoltic Uriel Palomino Ortega](https://github.com/urielpalomino)**
+
