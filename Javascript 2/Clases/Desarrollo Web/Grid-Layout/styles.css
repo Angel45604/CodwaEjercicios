@@ -1,0 +1,36 @@
+.container {
+    /* fr */
+    width: 100%;
+    display: grid;
+    background-color: #f2f2f2;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 100px 50px 200px; */
+    grid-template: 50px 100px 50px 200px / repeat(4, 1fr);
+    gap: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid red;
+}
+
+.item:nth-of-type(1) {
+    grid-row: 1 / span 2 ;
+}
+
+.item:nth-of-type(4) {
+    grid-column-start:2;
+    grid-column-end: span 3;
+    /* grid-column:  / ; */
+}
+
+.item:nth-of-type(5) {
+    grid-column: 1 / span 4;
+}
+
+/* 
+    0-100% 
+    em unidad relativa al tamaño de fuente especificada del elemento más cercano
+    rem  unidad relativa al tamaño de fuente especificada del elemento más lejano
+    vw -vh 0-100
+*/
