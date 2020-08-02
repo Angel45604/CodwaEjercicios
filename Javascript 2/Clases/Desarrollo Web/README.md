@@ -13,24 +13,47 @@ Fundamentos de [Grid Layout](https://css-tricks.com/snippets/css/complete-guide-
 }
 ```
 ## Layout de Pinterest
-![](https://user-images.githubusercontent.com/20376969/89110810-2990a080-d414-11ea-8a8a-57d82becbcce.png)
+![](https://user-images.githubusercontent.com/20376969/89131723-a4b98b80-d4d4-11ea-8752-9b39050aca5a.png)
 ```css
 .parent {
 	display: grid;
 	justify-content: center;
-	gap: 10px;
+	gap: 15px;
 }
 
-.item-s {
-	grid-row-end: span 1 ;
+.vacio:nth-child(1) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.item-m {
-	grid-row-end: span 2;
+.vacio:nth-child(2) {
+    grid-column-start: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.item-l {
-	grid-row-end: span 3;
+.vacio:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.vacio:nth-child(4) {
+    grid-column-start: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.vacio:nth-child(5) {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    place-items: center;
+}
+
+.item {
+	grid-row-end: span 4 ;
 }
 ```
-
