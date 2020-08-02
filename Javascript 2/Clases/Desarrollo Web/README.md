@@ -57,3 +57,7 @@ Fundamentos de [Grid Layout](https://css-tricks.com/snippets/css/complete-guide-
 	grid-row-end: span 4 ;
 }
 ```
+## Pseudo Pan
+![](https://user-images.githubusercontent.com/20376969/89131848-70929a80-d4d5-11ea-8177-3dc39adf71e6.png)
+
+Qué es un charset, ejemplos de pseudo clases y pseudo elementos .
