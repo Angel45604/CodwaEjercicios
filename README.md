@@ -15,5 +15,6 @@ Ejercicios de CodWA
 - **[Angel Marcos Montes](https://github.com/Angel45604)**
 - **[Elide Medel Izquierdo](https://github.com/Elide112004)**
 - **[Yoltic Uriel Palomino Ortega](https://github.com/urielpalomino)**
+- **[Said Josue Calixtro Maldonado](https://github.com/scalixtro)**
 
 
