@@ -1,6 +1,11 @@
 # CodwaEjercicios
 Ejercicios de CodWA
 
+## [Javascript 1]()
+### Integrantes
+- **[Angel Marcos Montes](https://github.com/Angel45604)**
+- **[Yoltic Uriel Palomino Ortega](https://github.com/urielpalomino)**
+
 ## [Javascript 2](https://github.com/Angel45604/CodwaEjercicios/tree/master/Javascript%202/Clases/Desarrollo%20Web)
 ### Integrantes
 - **[Angel Marcos Montes](https://github.com/Angel45604)**
