@@ -60,4 +60,8 @@ Fundamentos de [Grid Layout](https://css-tricks.com/snippets/css/complete-guide-
 ## Pseudo Pan
 ![](https://user-images.githubusercontent.com/20376969/89131848-70929a80-d4d5-11ea-8177-3dc39adf71e6.png)
 
-Qué es un charset, ejemplos de pseudo clases y pseudo elementos .
+Qué es un charset, ejemplos de pseudo clases y pseudo elementos.
+
+## Google
+![](https://user-images.githubusercontent.com/20376969/89574968-9e881f80-d7f2-11ea-9c25-853beb549da0.png)
+[Google](https://google.com) clonado, no hay gran ciencia.
