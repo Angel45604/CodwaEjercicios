@@ -18,6 +18,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     height: 100%;
+    margin-right: 322px;
 }
 
 .header-left .logo {
@@ -32,9 +33,16 @@ header {
     display: flex;
     align-items: center;
     border-radius: 3px;
+    transition: background-color .25s ease;
 }
 
-.header-left .search-icon {
+.header-left .input:focus-within {
+    background-color: #fff;
+    transition: .25s ease;
+}
+
+
+.header-left .input .search-icon {
     width: 18px;
     height: 18px;
     opacity: .65;
@@ -42,7 +50,15 @@ header {
     margin-right: 10px;
 }
 
-.header-left input {
+.input:focus-within .search-icon {
+    opacity: 1;
+}
+
+.input:focus-within .search-icon svg{
+    fill: #000;
+}
+
+.header-left .input input {
     margin: 0;
     padding: 0;
     width: 438px;
@@ -53,16 +69,16 @@ header {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    transition: background-color .25s ease;
 }
 
-.header-left input:focus {
-    background-color: #fff;
-    transition: .25s ease;
+.header-left .input input::placeholder {
+    color: rgba(255, 255, 255, .65);
+    font-weight: 500;
 }
 
 .header-right {
     height: 100%;
+    margin-right: 44px;
 }
 
 .header-right ul {
@@ -73,6 +89,7 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    padding-top: 1.5px;
 }
 
 .header-right ul li {
@@ -106,4 +123,137 @@ header {
 
 header svg {
     fill: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 625px 320px;
+    gap: 19px;
+}
+
+.posts {
+    background-color: lightgreen;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.posts article {
+    background-color: lightblue;
+    max-width: 540px;
+    border-radius: 3px;
+}
+
+.posts article header {
+    height: 51px;
+}
+
+.posts article header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posts article header ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.posts article header ul li .title {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.posts article header ul li .title > * {
+    margin-left: 10px;
+}
+
+
+.posts article header ul li .title p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.posts article header ul li .title p:hover {
+    cursor: pointer;
+}
+
+.posts article header ul li .title a {
+    text-decoration: none;
+    color: #00b8ff;
+}
+
+.posts article header ul li .title a:hover {
+    text-decoration: underline;
+}
+
+.posts article header ul li .post-menu-icon {
+    width: 18px;
+    height: 10px;
+    opacity: .65;
+}
+
+.posts article header ul li .post-menu-icon:hover {
+    cursor: pointer;
+}
+
+.posts article header ul li .post-menu-icon svg {
+    fill: #000;
+}
+
+.posts article figure {
+    margin: 0;
+    padding: 0;
+}
+
+.posts article figure img {
+    width: 100%;
+}
+
+.posts article .caption p {
+    margin: 15px;
+    font-weight: 500;
+}
+
+.posts article .hashtags .category {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.posts article .hashtags .category .category-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.posts article .hashtags .category .category-icon svg {
+    fill : #00cf35;
+}
+
+.posts article .hashtags .category p {
+    color : #00cf35;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.posts article .hashtags .category p:hover {
+    cursor: pointer;
+}
+
+.side-bar {
+    background-color: lightcoral;
+    height: 100vh;
 }
