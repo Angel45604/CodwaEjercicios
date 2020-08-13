@@ -138,16 +138,17 @@ header svg {
 }
 
 .posts {
-    background-color: lightgreen;
-
+    /* background-color: lightgreen; */
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .posts article {
-    background-color: lightblue;
+    background-color: #fff ;
     max-width: 540px;
     border-radius: 3px;
+    margin-top: 20px;
 }
 
 .posts article header {
@@ -202,6 +203,7 @@ header svg {
     width: 18px;
     height: 10px;
     opacity: .65;
+    margin-right: 15px;
 }
 
 .posts article header ul li .post-menu-icon:hover {
@@ -226,10 +228,19 @@ header svg {
     font-weight: 500;
 }
 
+.posts article .hashtags {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 16px;
+}
+
 .posts article .hashtags .category {
     display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
 }
 
 .posts article .hashtags .category .category-icon {
@@ -253,7 +264,157 @@ header svg {
     cursor: pointer;
 }
 
+
+.posts article .hashtags li {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.posts article .hashtags li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .65);
+}
+
+.posts article .hashtags li a:hover {
+    text-decoration: underline;
+}
+
+.posts article footer {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding: 0 20px 12px 20px;
+}
+
+.posts article footer .footer-left span {
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+}
+
+.posts article footer .footer-left span:hover {
+    cursor: pointer;
+}
+
+.posts article footer .footer-right ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.posts article footer .footer-right ul li {
+    margin-left: 20px;
+}
+
+.posts article footer .footer-right ul li span svg {
+    fill: rgba(0, 0, 0, .65);
+}
+
+.posts article footer .footer-right ul li span:hover {
+    cursor: pointer;
+}
+
+.posts article footer .footer-right ul li:nth-child(3) span svg {
+    fill: #00b8ff;
+}
+
 .side-bar {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .recomended-blogs .title {
+    border-bottom: 2px solid rgba(255, 255, 255, .13);
+    padding: 10px;
+}
+
+.side-bar .recomended-blogs .title h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li {
+    width: 100%;
+    height: 59px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 10px;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .13);
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li .blog-picture-container {
+    display: grid;
+    place-items: center;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li .blog-picture-container .blog-picture {
+    height: 37px;
+    width: 37px;
+    background-image: url('https://64.media.tumblr.com/avatar_f19263dc5b68_64.pnj');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li .blog-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li::after {
+    display: grid;
+    place-items: center;
+    content: "Seguir";
+    color:#00b8ff;
+    font-size: .9rem;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li:hover::after {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li .blog-name h4 {
+    color: #fff;
+    margin: 0;
+}
+
+.side-bar .recomended-blogs .blogs-list .blogs li .blog-name p {
+    margin: 0;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, .65);
+}
+
+.side-bar .recomended-blogs .search {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 22.5px;
+
+}
+
+.side-bar .recomended-blogs .search a  {
+    color: #00b8ff;
+    text-decoration: none;
+}
+
+.side-bar .recomended-blogs .search a:hover {
+    text-decoration: underline;
 }
