@@ -65,3 +65,25 @@ Qué es un charset, ejemplos de pseudo clases y pseudo elementos.
 ## Google
 ![](https://user-images.githubusercontent.com/20376969/89574968-9e881f80-d7f2-11ea-9c25-853beb549da0.png)
 [Google](https://google.com) clonado, no hay gran ciencia.
+
+## Tumblr
+![](https://user-images.githubusercontent.com/20376969/90321677-6dee6700-df11-11ea-94e7-3c94afc91cc0.png)
+Clon de [Tumblr](https://www.tumblr.com)
+### Posicionamiento, scroll sticky con las imagenes de perfil
+![](https://media.giphy.com/media/kZtSKarOyDP5GPggi3/giphy.gif)
+```css
+.post {
+	position: relative;
+}
+
+.post > .avatar {
+    height: 100%;
+    position: absolute;
+    left: -85px;
+}
+
+.avatar > img {
+    position: sticky;
+    top: 69px;
+}
+```

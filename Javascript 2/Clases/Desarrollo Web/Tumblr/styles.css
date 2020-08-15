@@ -5,12 +5,16 @@ body {
     font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
 }
 
-header {
+body > header {
+    background-color: #001935;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 55px;
     border-bottom: 1px solid rgba(255, 255, 255, .13);
+    position: sticky;
+    top:0;
+    z-index: 99;
 }
 
 .header-left {
@@ -144,18 +148,58 @@ header svg {
     align-items: flex-end;
 }
 
-.posts article {
-    background-color: #fff ;
-    max-width: 540px;
-    border-radius: 3px;
+.posts .post-container {
+    width: 540px;
     margin-top: 20px;
+
 }
 
-.posts article header {
+.side-bar .radar .post-container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+    
+}
+
+.posts article, .side-bar .radar article {
+    background-color: #fff ;
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.posts article {
+    position: relative;
+}
+
+.posts article .avatar {
+    position: absolute;
+    left: -85px;
+    height: 100%;
+}
+
+.posts article .avatar figure {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    position: sticky;
+    top: 69px;
+}
+
+.posts article .avatar figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.posts article header, .side-bar .radar article header  {
     height: 51px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.posts article header ul {
+.posts article header ul, .side-bar .radar article header ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -170,56 +214,57 @@ header svg {
     margin-right: 10px;
 }
 
-.posts article header ul li .title {
+.posts article header ul li .title, .side-bar .radar article header ul li .title {
     display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: bold;
 }
 
-.posts article header ul li .title > * {
+.posts article header ul li .title > *, .side-bar .radar article ul li .title > * {
     margin-left: 10px;
 }
 
 
-.posts article header ul li .title p {
+.posts article header ul li .title p, .side-bar .radar article header ul li .title p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.posts article header ul li .title p:hover {
+.posts article header ul li .title p:hover, .side-bar .radar article header ul li .title p:hover {
     cursor: pointer;
 }
 
-.posts article header ul li .title a {
+.posts article header ul li .title a, .side-bar .radar article header ul li .title a {
     text-decoration: none;
     color: #00b8ff;
 }
 
-.posts article header ul li .title a:hover {
+.posts article header ul li .title a:hover, .side-bar .radar article header ul li .title a:hover {
     text-decoration: underline;
 }
 
-.posts article header ul li .post-menu-icon {
+.posts article header ul li .post-menu-icon, .side-bar .radar article header ul li .post-menu-icon {
     width: 18px;
     height: 10px;
     opacity: .65;
     margin-right: 15px;
 }
 
-.posts article header ul li .post-menu-icon:hover {
+.posts article header ul li .post-menu-icon:hover, .side-bar .radar article header ul li .post-menu-icon:hover {
     cursor: pointer;
 }
 
-.posts article header ul li .post-menu-icon svg {
+.posts article header ul li .post-menu-icon svg, .side-bar .radar article header ul li .post-menu-icon svg  {
     fill: #000;
 }
 
-.posts article figure {
+.posts article figure, .side-bar .radar article figure {
     margin: 0;
     padding: 0;
 }
 
-.posts article figure img {
+.posts article figure img, .side-bar .radar article figure img {
     width: 100%;
 }
 
@@ -279,7 +324,7 @@ header svg {
     text-decoration: underline;
 }
 
-.posts article footer {
+.posts article footer, .side-bar .radar article footer {
     height: 36px;
     display: flex;
     justify-content: space-between;
@@ -288,31 +333,31 @@ header svg {
     padding: 0 20px 12px 20px;
 }
 
-.posts article footer .footer-left span {
+.posts article footer .footer-left span, .side-bar .radar article footer .footer-left span {
     font-weight: 600;
     color: rgba(0, 0, 0, .65);
 }
 
-.posts article footer .footer-left span:hover {
+.posts article footer .footer-left span:hover, .side-bar .radar article footer .footer-left span:hover {
     cursor: pointer;
 }
 
-.posts article footer .footer-right ul {
+.posts article footer .footer-right ul, .side-bar .radar article footer .footer-right ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.posts article footer .footer-right ul li {
+.posts article footer .footer-right ul li, .side-bar .radar article footer .footer-right ul li {
     margin-left: 20px;
 }
 
-.posts article footer .footer-right ul li span svg {
+.posts article footer .footer-right ul li span svg, .side-bar .radar article footer .footer-right ul li span svg {
     fill: rgba(0, 0, 0, .65);
 }
 
-.posts article footer .footer-right ul li span:hover {
+.posts article footer .footer-right ul li span:hover, .side-bar .radar article footer .footer-right ul li span:hover {
     cursor: pointer;
 }
 
@@ -327,12 +372,12 @@ header svg {
     flex-direction: column;
 }
 
-.side-bar .recomended-blogs .title {
+.side-bar .section-title {
     border-bottom: 2px solid rgba(255, 255, 255, .13);
     padding: 10px;
 }
 
-.side-bar .recomended-blogs .title h1 {
+.side-bar .section-title h1 {
     color: #fff;
     margin: 0;
 }
@@ -352,7 +397,7 @@ header svg {
 }
 
 .side-bar .recomended-blogs .blogs-list .blogs li:hover {
-    cursor: pointer;
+    cursor: pointer;1
     background-color: rgba(255, 255, 255, .13);
 }
 
@@ -418,3 +463,14 @@ header svg {
 .side-bar .recomended-blogs .search a:hover {
     text-decoration: underline;
 }
+
+.side-bar .radar article header ul li .profile-picture {
+    background-image: url('https://64.media.tumblr.com/f846dfe35579a3a4f15e5ff9c84cacad/125bb56235dce317-4f/s64x64u_c1/6b9479688bcc86f714d982900ba7bcc115bef76c.pnj');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
