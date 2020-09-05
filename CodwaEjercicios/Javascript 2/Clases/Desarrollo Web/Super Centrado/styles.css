@@ -1,0 +1,34 @@
+body {
+    background-color: lightblue;
+    /* 
+    Viewport
+    vh vp height
+    vw vp width
+     */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    /* 
+        absolutas
+        relatvias
+     */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.winkie {
+    background-color: darksalmon;
+    border-radius: 10px;
+}
+
+.winkie p {
+    margin: 0;
+    font-family: monospace;
+    font-size: 100px;
+    font-weight: bold;
+}
