@@ -1,0 +1,38 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #7d1111;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:30px;
+    width: 80vw;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 38px;
+}
+
+#invocar {
+    background-color: darkred;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size:38px;
+}
+
+#respuesta {
+    color: white;
+    font-size: 42px;
+}
