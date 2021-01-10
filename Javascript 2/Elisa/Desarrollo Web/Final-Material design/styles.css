@@ -1,0 +1,373 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.casilla {
+    width: 12vh;
+    height: 100%;
+}
+.casilla ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+li {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ul li:last-child{
+    position: absolute;
+    bottom: 0%;
+}
+.icono{
+    height: 20px;
+    width: 20px;
+}
+.menu{
+    height: 55px;
+    width: 55px;
+    display: grid;
+    place-items: center;
+}
+.menu:hover{
+    cursor:pointer;
+}
+.menu:active{
+    border-radius: 6px;
+    border: 3px solid #e79cc2;
+    background-color: #f6e6e6;
+}
+.circulo{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-items: center;
+}
+.uno{
+    background-color: #726a95;
+}
+.dos{
+    background-color: #fef4d8;
+    border: solid 3px #fbd46d;
+    stroke-width: 10px;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 1%;
+}
+.circulo:hover{
+    cursor:pointer;
+}
+li :nth-child(1) .menu{
+    border-radius: 50%;
+    background-color: #726a95;
+}
+.conten{
+    background-color: #f7f7ee;
+    height: 100vh;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 11%;
+}
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.busqueda{
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 30px;
+    width: 150px;
+    margin-right: 90px;
+}
+.buscar{
+    margin-left: 8px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #726a95;
+}
+.lupa{
+    margin-top: 4px;
+    margin-right: 6px;
+}
+.lens{
+    width: 18px; 
+    height: 18px;
+}
+.pro{
+    border-radius: 10px;
+    height: 30px;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6e6e6;
+    font-size: 10px;
+    margin-right: 90px;
+    color: #726a95;
+    font-weight: bold;
+}
+.pro1::before{
+    font-size: 11px;
+    content: "😎";
+}
+.mensaje{
+    margin-right: 90px;
+    background-color: #726a95;
+    height: 18px;
+    width: 18px;
+}
+.perfil{
+    margin-right: 90px;
+}
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.herramientas{
+    height: 90%;
+    width: 63%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.saludo{
+    display: grid;
+    font-size: 295%;
+    margin-bottom: 3%;
+    height: min-content;
+}
+.deseo{
+    font-size: 38%;
+    opacity: 0.6;
+}
+.letras{
+    font-size: 88%;  
+    opacity: 0.6;
+}
+.ganancias{
+    height: min-content;
+    display: grid;
+}
+.report{
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    height: 200px;
+    margin: 10px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banco{
+    width: 130px;
+    height: 130px;
+    margin-right: 80px;
+    margin-left: 50px;
+}
+.dinero{
+    display: grid;
+    margin-right: 50px;
+    text-align: center;
+}
+.dinerito{
+    font-size: 30px;
+    display: flex;
+}
+.pesitos{
+    margin-top: 15px;
+    margin-right: 2px;
+    font-size: 12px;
+}
+.guion{
+    justify-self: center;
+    height: 30px;
+    width: 12px;
+    border-bottom: 1.5px solid rgb(155, 154, 154);
+}
+.letrero{
+    font-size: 12px;
+    margin-top: 1%;
+}
+.funds{
+    opacity: 0.6;
+}
+.earnings{
+    font-weight: bold;
+}
+.sombra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f1f1;
+    border-radius: 15px;
+    box-shadow: -1px 13px 13px -2px rgba(199,187,199,1);
+    width: 50%;
+    height: 95%;
+    margin-right: 7px;
+}
+.lupa2{
+    margin-left: 20px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 195px;
+    width: 100%;
+}
+.product{
+    width: 48%;
+    height: 90%;
+}
+.abajo{
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+}
+.impressions{
+    width: 49%;
+    height: 90%;
+}
+.newusers{
+    box-shadow: -1px 13px 13px -2px rgba(199,187,199,1);
+    display: flex;
+}
+.proed{
+    display: grid;
+}
+.prodear{
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f1f1;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #7a797a;
+    height: 34px;
+}
+.tres{
+    padding: 0px 14px 0px 14px;
+    width: 88%; 
+    display: flex;
+    margin: 5px 10px 0px 10px;
+}
+.tres:nth-child(2){
+    margin-top: 18px;
+}
+.mart{
+    margin:  5px 20px 5px 10px;
+    height: fit-content;
+}
+.fxa{
+    display: grid;
+    width: 70%;
+    font-size: 12px;
+    font-weight: bold;
+    height: min-content;
+}
+.app{
+    font-weight: normal;
+    font-size: 10px;
+    color: #726a95;
+}
+.money{
+    font-size: 15px;
+    font-weight: bold;
+    height: fit-content;
+}
+.imgn{
+    height: 120px;
+    width: 120px;
+}
+.imgn2{
+    height: 50%;
+    width: 50%;
+}
+.data{
+    display: grid;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    font-size: 20px;
+}
+.unu{
+    font-size: 11px;
+    color: #726a95;
+}
+.rojito{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #fef4d8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mapa{
+    background-color: #dad6ee;
+    width: 25%;
+    height: 98%;
+    border-radius: 18px;
+    display: grid;
+}
+.mas{
+    border-radius: 50%;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 2% 0% 0% 89%;
+    box-shadow: -1px 11px 16px -9px rgba(77,75,77,1);
+}
+.derecha{
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+}
+.derecha2{
+    width: 95%;
+    height: 200px;
+    justify-self: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.signboard{
+    display:none;
+}
+.create{
+    display: none;
+}
+.earn{
+    display:none;
+}
+.Portfolio{
+    display:none;
+}
+.grsi{
+    display: none;
+}
+.ybmt{
+    display: none;
+}
