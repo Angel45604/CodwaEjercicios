@@ -1,0 +1,463 @@
+@media screen and (max-width: 1023px) {
+
+    .page-content {
+        grid-template-columns: 20% auto;
+    }
+
+    /* %%%%%%%%%%%%%%%%%%% MENU IZQUIERDO %%%%%%%%%%%%%%%%%%% */
+
+    .page-content .menu {
+        position: relative;
+    }
+
+    .page-content .menu ul {
+        margin: 0;
+        padding: 2vh 2vw;
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+    .page-content .menu ul li {
+        height: 9vh;
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+
+    .page-content .menu ul li a {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 600;
+        color: #726a95;
+    }
+
+    .page-content .menu ul li a span, .page-content .menu ul li p {
+        display: block;
+    }
+
+    .page-content .menu ul li a figure img {
+        width: 2vw;
+        height: auto;
+    }
+
+    /* --------------- INTERFACE ---------------- */
+    .page-content .menu ul li:nth-child(1) {
+        width: 100%;
+        height: 8vh;
+    }
+
+    .page-content .menu ul li:nth-child(1) a {
+        border-radius: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    .page-content .menu ul li:nth-child(1) a span {
+        color: black;
+        font-size: large;
+        font-weight: 500;
+    }
+
+    .page-content .menu ul li a .menu-icon {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        background-color: #726a95;
+    }
+
+    .page-content .menu .menu-icon img {
+        width: 1.5vw;
+        height: auto;
+    }
+
+
+    /* ----------- NEW ITEM ---------- */
+
+    .page-content .menu ul li:nth-last-child(1) {
+        display: block;
+        width: inherit;
+        height: auto;
+        padding: inherit;
+        margin: 0;
+        box-sizing: border-box;
+        margin-bottom: 10vh;
+    }
+
+    .page-content .menu ul li:nth-last-child(1) a {
+        box-sizing: border-box;
+        background-color: #fbd46d;
+        width: inherit;
+        height: 7vh;
+        border-radius: 1vh;
+    }
+
+    .page-content .menu ul li:nth-last-child(1) a .add-icon {
+        width: 5vh;
+        height: 5vh;
+        border-radius: inherit;
+        background-color: #f4ebc1;
+    }
+
+    .page-content .menu ul li:nth-last-child(1) a span {
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    .page-content .menu ul li:nth-last-child(1) p {
+        color: #b9b2d8;
+        text-align: center;
+    }
+
+    /* %%%%%%%%%%%%%%%%%% LATERAL CONTENT %%%%%%%%%%%%%%%%%%%%% */
+
+
+    /* ---------- HEADER ---------- */
+    .page-content .lateral-content .header .renew-pro {
+        display: none;
+    }
+
+
+    /* ---------- MAIN CONTENT ---------- */
+    .page-content .lateral-content .main-content {
+        grid-template-columns: 50% 50%;
+        grid-template-rows:  10vh repeat(5, 8vh) auto;
+        grid-auto-flow: row;
+        grid-row-gap: 0;
+        grid-column-gap: 2vw;
+    }
+
+    .page-content .lateral-content .main-content .something {
+        display: none;
+    }
+
+    /* ---------- MAIN CONTENT-GREETINGS ---------- */
+    .page-content .lateral-content .main-content .greetings {
+        grid-row: 1;
+        height: 8vh;
+    }
+
+    .page-content .lateral-content .main-content .greetings h1 {
+        font-size: 4vh;
+        font-weight: 600;
+    }
+
+    /* ---------- MAIN CONTENT-USER CHARACTERISTICS ----------*/
+    .page-content .lateral-content .main-content .user-characteristics {
+        grid-row-start: 2;
+        grid-column: 1;
+        display: block;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background-color: white;
+        border-radius: 13px;
+        height: 7vh;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics ul li a{
+        text-decoration: none;
+    }
+    
+
+    /* YOUR PRO */
+    .page-content .lateral-content .main-content .user-characteristics .characteristics ul li:nth-child(1) {
+        height:100%;
+        width: 10vw;
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics ul li:nth-child(1) a {
+        color: white;
+        background-color:  #958bc5;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        padding: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    /* YOUR PORTFOLIO */
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics ul li:nth-child(2){
+        height: 100%;
+        width: 15vw;
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics ul li:nth-child(2) a {
+        color: #958bc5;
+        background-color:  white;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        padding: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    /* MORE */
+    .page-content .lateral-content .main-content .user-characteristics .characteristics .more {
+        background-color: white;
+        border-radius: 13px;
+        box-shadow: 0px 10px 10px 2px rgba(0,0,0,0.2);
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics .more a {
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
+        background-color: transparent;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .characteristics .more a figure {
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
+        width: 7vh;
+        height: 7vh;
+        background-color: transparent;
+        display: grid;
+        place-items: center;
+    }
+
+    /* |--- CONTENT ---| */
+
+    .page-content .lateral-content .main-content .user-characteristics .content {
+        margin-top: 2vh;
+        padding-top: 2vh;
+        border-radius: 13px;
+        background-color: #dfbfdd77;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .phone {
+        margin: 0 0 2vh 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .phone img {
+        width: 30vh;
+        height: auto;
+    }
+
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice {
+        margin: 0;
+        padding: 1vh 1vw;
+        height: 7vh;
+        background-color: #726a95;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: inherit;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .clock {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .clock img {
+        width: 4vh;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .info {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .info p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5vh;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .info p:nth-child(1) {
+        color: white;
+        font-weight: 500;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .info p:nth-child(2) {
+        color: #c3bae9;
+    }
+
+    .page-content .lateral-content .main-content .user-characteristics .content .advice .renew {
+        height: 5vh;
+        width: 10vw;
+        border: none;
+        border-radius: inherit;
+        background-color: #dfbfdd;
+        color: white;
+        font-weight: 600;
+        font-size: 1.2vh;
+    }
+
+    /* ---------- MAIN CONTENT - YOUR EARNINGS ----------*/
+
+    .page-content .lateral-content .main-content .earnings {
+        grid-column: 2;
+        grid-row: 1/4;
+        display: block;
+    }
+
+    .lateral-content .main-content .earnings .section-title::before {
+        content: "Your Earnings";
+    }
+
+    .page-content .lateral-content .main-content .earnings .report-container {
+        background-color: transparent;
+        padding-left: 0;
+        height: 24vh;
+    }
+
+    .page-content .lateral-content .main-content .earnings .report-container .my-funds {
+        display: none;
+    }
+
+    .page-content .lateral-content .main-content .earnings .report-container .earnings-info {
+        flex-direction: row-reverse;
+        width: 100%;
+        background-color: white;
+        padding: 1vh;
+        border-radius: 20px;
+    }
+
+    body > section > section.lateral-content > section > article.earnings > div > div.earnings-info > figure {
+        margin: 0;
+    }
+
+    body > section > section.lateral-content > section > article.earnings > div > div.earnings-info > figure img {
+        width: 12vh;
+    }
+
+    .lateral-content .main-content .earnings .report-container .earnings-info .info .money::after {
+        content: "98.00"
+    }
+
+    .lateral-content .main-content .earnings .report-container .earnings-info .info .underscore::before {
+        content: "Graphics";
+    }
+
+    .lateral-content .main-content .earnings .report-container .earnings-info .info .underscore {
+        margin-bottom: 1vh;
+    }
+
+    .lateral-content .main-content .earnings .report-container .earnings-info .info .title::before {
+        content: "Interfaces";
+    }
+
+    .lateral-content .main-content .earnings .report-container .earnings-info .info .title {
+        font-size: small;
+        font-weight: 400;
+        color: #aa9a9a;
+    }
+
+    /* ---------- MAIN CONTENT - YOUR BEST ----------*/
+    .lateral-content .main-content .your-best {
+        display: flex;
+        grid-column: 2;
+        grid-row: 5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lateral-content .main-content .your-best > * {
+        flex-grow: 1;
+    }
+
+    .lateral-content .main-content .your-best .info {
+        margin: 0;
+        padding: 8%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lateral-content .main-content .your-best .info .best-icon {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    .lateral-content .main-content .your-best .info .best-icon img {
+        width: 3vh;
+    }
+
+    .lateral-content .main-content .your-best .info .description {
+        height: 5vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .lateral-content .main-content .your-best .info .description p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .lateral-content .main-content .your-best .info .description p:nth-child(1) {
+        font-weight: 600;
+    }
+
+    .lateral-content .main-content .your-best .info .description p:nth-child(2) {
+        font-size: small;
+    }
+
+    .lateral-content .main-content .your-best .info .description p:nth-child(2) {
+        color: #aa9a9a;
+    }
+
+    .lateral-content .main-content .your-best .best-month .info {
+        margin-right: 2vw;
+        background-color: white;
+        box-shadow: 0px 10px 10px 2px rgba(0,0,0,0.2);
+        border-radius: 13px;
+    }
+
+    .lateral-content .main-content .your-best .best-month .info .more {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    .lateral-content .main-content .your-best .best-tool .info {
+        background-color: #726a95;
+        box-shadow: 0px 10px 10px 2px rgba(0,0,0,0.2);
+        border-radius: 13px;
+    }
+
+    .lateral-content .main-content .your-best .best-tool .info p {
+        color: white;
+    }
+
+    /* ---------- MAIN CONTENT - TOP ITEMS ----------  */
+
+    .lateral-content .main-content .items {
+        grid-row: 7;
+        grid-column: 2;
+        display: flex;
+        height: 30vh;
+    }
+
+    .lateral-content .main-content .items .impressions-container {
+        display: none;
+    }
+
+}

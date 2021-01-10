@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #011936;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    background-color: #011228;
+    color: #14F782;
+    display: grid;
+    place-items: center;
+    font-size: x-large;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10vw;
+    width: 80vw;
+    height: 50%;
+}
+
+.game-board button {
+    margin: 0;
+    padding: 0;
+    border: 5px solid #14F782;
+    background-color:  #011936;
+    border-radius: 5vh;
+}
+
+.game-board button figure {
+    margin: 0;
+    padding: 2vh;
+    width: 6vw;
+    height: 12vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.game-board button figure img {
+    width: 80%;
+}
+
+#player-area {
+    width: 35vw;
+}
+
+#player-area #user-play {
+    display: none;
+}
+
+#opponent-area {
+    width: 35vw;
+    display: grid;
+    place-items: center;
+}
+
+#results, #player-points, #opponent-points, #vs {
+    margin: 0;
+    padding: 0;
+    color: #FCF6B1;
+    font-size: larger;
+    display: grid;
+    place-items: center;
+}
+
+#player-points, #opponent-points {
+    padding-top: 10vh;
+}
+
+#vs {
+    width: 10vw;
+    font-size: 6vh;
+}
+
+#results {
+    margin: 5vh 0;
+    width: 100%;
+}
+
+#results > * {
+    display: none;
+}
