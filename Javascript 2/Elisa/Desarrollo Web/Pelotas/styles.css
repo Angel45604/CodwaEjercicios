@@ -1,0 +1,50 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.contenedor{
+    border: 2px solid black;
+    width: 98%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+.azul{
+    border-radius: 50%;
+    background-color: blue;
+    width: 20vh;
+    height: 100%;
+    animation-name: pelotaa;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: cubic-bezier(0.1, 1, 0, 0.1);
+}
+.roja{
+    border-radius: 50%;
+    background-color: red;
+    width: 20vh;
+    height: 100%;
+    animation-name: pelotar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: cubic-bezier(0.1, 1, 0, 0.1);
+}
+
+@keyframes pelotaa{
+    100% {
+        transform: translate(calc(48vw - 20vh),0) 
+    }
+}
+
+@keyframes pelotar{
+    100% {
+        transform: translate(calc(-48vw + 20vh),0) 
+    }
+}
