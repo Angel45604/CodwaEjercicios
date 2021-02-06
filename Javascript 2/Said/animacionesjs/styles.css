@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    margin:0;
+    padding: 0;
+    height: 15vh;
+    width: 60vw;
+    position: relative;
+    border: 1px solid #FE9000;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.ball {
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    background-color: #FE9000;
+    border-radius: 50%;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 2vw;
+}
+
+.btn {
+    margin: 0;
+    padding: 10px;
+    width: 10vw;
+    height: 9vh;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    font-family: 'Space Mono', monospace;
+    border: 2px solid #FE9000;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: large;
+}
+
+.buttons .btn:focus {
+    outline: none;
+    background-color: #FE9000;
+}
+
+.buttons .btn:hover {
+    color: whitesmoke;
+  }
+  
+.buttons .btn::before {
+    content: '';
+    position: absolute;
+    background: #FE9000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+}
+  
+.buttons .btn:hover::before {
+    top: 0;
+}
+
+.buttons .btn:active {
+    box-shadow: 1px 10px 18px 11px rgba(254,144,0,0.66);
+}
