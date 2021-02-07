@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.way{
+    display: flex;
+    border: 2px solid rgb(15, 121, 15);
+    border-radius: 13rem;
+    align-items: flex-end;
+    width: 70%;
+    height: 25%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+.circle{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: rgb(15, 121, 15);
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    gap: 20px;
+    width: 50%;
+    height: 5%;
+    align-self: center;
+    justify-self: center;
+    list-style: none;
+    place-items: center;
+    margin-left: 20%;
+}
+ul li{
+    width: 100%;
+    height: 100%;
+}
+ul li button{
+    background-color: rgb(15, 121, 15);
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    text-decoration: white;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3vw;
+    font-family: cursive;
+}
