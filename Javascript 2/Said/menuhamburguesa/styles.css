@@ -1,0 +1,171 @@
+body {
+    margin: 2%;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #FE7F2D;
+    overflow: hidden;
+}
+
+.icon {
+    margin-bottom: 1vh;
+    padding: 0;
+    width: 3vw;
+    height: 2.6vw;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon  span{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 2.5vw;
+    height: 0.75vh;
+    background-color: #FECEAE;
+    border-radius: 50px;
+    position: relative;
+    top: 1.5vh;
+}
+
+.icon span::before , .icon span::after {
+    content: "  ";
+    display: block;
+    width: 2.5vw;
+    height: 0.75vh;   
+    background-color: #FECEAE;
+    border-radius: 50px;
+    position:relative;
+}
+
+.icon span::before {
+    top: -1.25vh;
+}
+
+.icon span::after {
+    top: 0.5vh;
+}
+
+/* MENU */
+.menu {
+    margin:0;
+    padding: 0;
+    width: 25vw;
+    height: 90vh;
+    background-color: #FECEAE;
+    overflow: hidden;
+    position: absolute;
+    left: -50vw;
+    border-top-right-radius: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 1vh 0;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #001011;
+}
+
+/* ------ MENU ANIMATIONS ------ */
+
+/* Checked */
+#magia:checked + .icon {
+    animation-name: arrow_anim;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+#magia:checked + .icon span::before {
+    animation-name: before_anim; 
+    /* yatevi */
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+#magia:checked + .icon span::after {
+    animation-name: after_anim;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+/* Not checked */
+#magia:not(:checked) + .icon {
+    animation-name: arrow_start;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+#magia:not(:checked) + .icon span::before {
+    animation-name: before_start;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+#magia:not(:checked) + .icon span::after {
+    animation-name: after_start;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+/* Animations for active menu */
+@keyframes arrow_anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg) translateY(0.9vw);
+    }
+}
+
+@keyframes before_anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg) scale(0.6,1) translate(1.2vw, -0.1vw);
+    }
+}
+
+@keyframes after_anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-30deg) scale(0.6,1) translate(1.2vw, 0.1vw);
+    }
+}
+
+/* Animations for starting state of the menu */
+@keyframes arrow_start {
+    0% {
+        transform: rotate(180deg) translateY(0.9vw);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes before_start {
+    0% {
+        transform: rotate(45deg) scale(0.6,1) translateX(1.2vw);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes after_start {
+    0% {
+        transform: rotate(-45deg) scale(0.6,1) translateX(1.2vw);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
