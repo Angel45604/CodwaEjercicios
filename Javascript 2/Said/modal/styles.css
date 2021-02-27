@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 100px 75px;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+}
+
+/* BUTTON */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px; 
+    width: 80px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid black;
+    position: relative;
+    left: calc(50% - 32.5px);
+    z-index: 500;
+}
+
+.btn::before {
+    content: "  ";
+    margin: 0;
+    padding: 0;
+    width: 78px;
+    height: 0px;
+    background-color: #7261A3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.1s ease-in-out;
+}
+ 
+.btn:hover {
+    cursor: pointer;
+    color: white;
+} 
+
+.btn:hover::before {
+    height: 33px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn:active::before {
+    transform: scaleY(0.95) scaleX(0.98); 
+}
+
+
+/* LOREM IPSUM */
+.lipsum {
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-left: 120px;
+    font-family: 'Spectral', serif;
+}
+
+/* BACKGROUND OPACITY */
+.bg_op {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3C2A3C;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 800;
+}
+
+/* MODAL */
+#modal {
+    margin: 0;
+    padding: 15px;
+    width: 300px;
+    height: 170px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 90%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(50% + -170px);
+    z-index: 900;
+}
+
+#modal h2 {
+    font-size: large;
+}
