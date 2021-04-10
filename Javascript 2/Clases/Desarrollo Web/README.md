@@ -90,3 +90,8 @@ Clon de [Tumblr](https://www.tumblr.com)
 ## Ahorcado
 ![](https://user-images.githubusercontent.com/20376969/114278420-6a09da80-99f5-11eb-9d24-c39eb63803dc.png)
 Juego del ahorcado hecho con HTML, CSS y JS
+
+## Gato
+![](https://user-images.githubusercontent.com/20376969/114278499-bead5580-99f5-11eb-8ac5-30ece4a890dc.png)
+Juego de 3 en linea hecho con HTML, CSS y JS
+
