@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 2px red solid;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.pelota {
+    background-color: blue;
+    border-radius: 50px;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+
+    animation-name: rebota, rebote;
+    animation-duration: 2s, .5s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.pelota::after {
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    top: -50px;
+    left: 70px;
+}
+
+.pelota::before {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    top: -40px;
+    left: 30px;
+}
+
+@keyframes rebota {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100% - 250px);
+    }
+}
+
+@keyframes rebote {
+
+    0% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}

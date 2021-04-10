@@ -98,3 +98,7 @@ Juego de 3 en linea hecho con HTML, CSS y JS
 ## Ouija
 ![](https://user-images.githubusercontent.com/20376969/114278542-f3211180-99f5-11eb-96c6-2ad03b3a9844.png)
 Pregúntale cosas al señor de las tinieblas
+
+## Animaciones
+![](https://user-images.githubusercontent.com/20376969/114278762-dfc27600-99f6-11eb-8bb4-6309bace903e.gif)
+Ejercicios de animaciones con CSS y Web Animations API

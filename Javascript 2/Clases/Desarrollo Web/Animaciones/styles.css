@@ -1,0 +1,71 @@
+.pelota {
+    background-color: blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 1s;
+    /* transition-delay: 500ms; */
+    /* transition-timing-function: ease-in-out; */
+}
+
+.pelota:hover {
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+    background-color: red;
+    border-radius: 0;
+}
+
+.pelota2 {
+    background-color: green;
+    /* border-radius: 50%; */
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.pelota2:hover {
+    /* transform: rotar | sesgar | posicion | tamaño*/
+    /* transform: rotate(45deg) skew(10deg) translateX(50px); */
+    transform: rotate(45deg) translateX(50px) scale(0.5);
+}
+
+.pelota3 {
+    background-color: black;
+    /* border-radius: 50%; */
+    width: 100px;
+    height: 100px;
+    animation-name: animacionuno;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.pelota3:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animacionuno {
+    0% {
+        transform:translate(200px, 0) ;
+    }
+
+    50% {
+        transform:translate(100px, 0) rotate(45deg);
+        width: 150px;
+        opacity: .5;
+    }
+
+    100% {
+        transform:translate(100px, 100px) rotate(90deg);
+    }
+
+}
