@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Piedra-Papel-Tijera</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">    
+    <style>
+        html {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="title">
+        <h1>Piedra - Papel - Tijera</h1>
+    </section>
+    <!-- Game board -->
+    <section class="game-board" > 
+        <div id="player-area">
+            <figure id="user-play">
+                <!-- The user's choice -->
+            </figure>
+            <button id="btnrock" class="rock">
+                <figure id="rock-icon" class="rock">
+                    <img src="https://www.flaticon.es/svg/static/icons/svg/2206/2206698.svg" alt="Piedra" class="rock">
+                </figure>
+            </button>
+            <button id="btnpaper" class="paper">
+                <figure id="paper-icon" class="paper">
+                    <img src="https://www.flaticon.es/svg/static/icons/svg/1390/1390953.svg" alt="Papel" class="paper">
+                </figure>
+            </button>
+            <button id="btnscissors" class="scissors">
+                <figure id="scissors-icon" class="scissors">
+                    <img src="https://www.flaticon.es/svg/static/icons/svg/1467/1467431.svg" alt="Tijeras" class="scissors">
+                </figure>
+            </button>
+            <div id="player-points"> 0 </div>
+        </div>
+
+        <div id="vs">
+            VS
+        </div>
+
+        <div id="opponent-area">
+            <figure id="opp-icon">
+
+            </figure>
+            <div id="opponent-points"> 0 </div>
+        </div>
+        <div id="results">
+            <p id="win">  GANASTE  </p>
+            <p id="lose"> PERDISTE </p>
+            <p id="draw"> EMPATE   </p>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

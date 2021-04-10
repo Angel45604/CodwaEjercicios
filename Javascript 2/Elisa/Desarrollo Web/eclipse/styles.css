@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    background-color: rgb(178, 179, 236);
+    position: absolute;
+    animation-name: negrito;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.nube{
+    width: 180px;
+    height: 80px;
+    background-color: beige;
+    border-radius: 50px;
+    position: absolute; 
+    animation-name: negrito;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+.uno{
+    top:8%;
+    left: 5%;
+}
+.dos{
+    top:8%;
+    left: 82%;
+}
+.tres{
+    top:25%;
+    left: 15%;
+}
+.cuatro{
+    top:25%;
+    left: 70%;
+}
+.nube::before{
+    position: absolute;
+    content: '';
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: beige;
+    top: -30px;
+    left: 80px;
+    animation-name: negrito;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.nube::after{
+    position: absolute;
+    content: '';
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: beige;
+    top: -25px;
+    left: 35px;
+    animation-name: negrito;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.sol{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: orange;
+    left: 45vw;
+    position: absolute;
+    box-shadow: 0px -2px 76px 4px rgba(226,148,126,0.87);
+    -webkit-box-shadow: 0px -2px 76px 4px rgba(226,148,126,0.87);
+    -moz-box-shadow: 0px -2px 76px 4px rgba(226,148,126,0.87);
+}
+.luna{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(178, 179, 236);
+    position: absolute;
+    animation-name: desliza;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes desliza{
+    0%{
+        left: 0;
+    }
+    40%, 60%{ /*Puedes poner múltiples porcentajes para que se quede pausado en ese estado*/
+        /* En ese caso, del 40 al 50 % de la animación, se va a quedar en medio la lunita */
+        left: calc(50% - 68px); /*Aqui*/
+        background-color: black; 
+    }
+    100%{
+        left: calc(100% - 150px);
+    }
+}
+@keyframes negrito{
+    50%{
+        background-color: black;
+    }
+}
+

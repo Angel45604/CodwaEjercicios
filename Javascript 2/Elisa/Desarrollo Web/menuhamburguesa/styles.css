@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: yellowgreen;
+}
+.menu{
+    width: 20%;
+    height: 100%; 
+}
+.b{
+    background-color: white;
+    height: 0.5vh;
+    width: 2vw;
+    margin: 1vh;
+    border-radius: 25%;
+}
+.a{
+    width:3vw;
+    margin: 2vh;
+}
+.a:hover{
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    height: 92.6vh;
+    margin: 0;
+    background-color: white;
+    position: relative;
+    display: table;
+    left: -30vw;
+}
+li{
+    width: 100%;
+    margin: 4% 0% 8%;
+    border-bottom: 1px solid rgb(151, 150, 150);
+}

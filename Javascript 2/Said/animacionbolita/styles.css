@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0F0326;
+    display: grid;
+    place-items: center;
+}
+
+.menu {
+    margin: 0 28vh 0 0;
+    padding: 0;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+}
+
+.menu ul li {
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.menu ul li:hover {
+    cursor: pointer;
+}
+
+.menu ul li .icon {
+    margin: 0;
+    padding: 0;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    background-color: #D80032;
+    display: grid;
+    place-items: center;
+}
+
+.menu ul li .icon img {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.menu ul .menu1 {
+    z-index: 6;
+}
+
+.menu ul .menu1 .icon img {
+    width: 40%;
+}
+
+.menu ul .menu2 {
+    z-index: 5;
+}
+
+.menu ul .menu2 .icon {
+    background-color: #FF0A43;
+}
+
+.menu ul .menu3 {
+    z-index: 4;
+}
+
+.menu ul .menu3 .icon {
+    background-color: #FF3363;
+}
+
+.menu ul .menu4 {
+    z-index: 3;
+}
+
+.menu ul .menu4 .icon {
+    background-color: #FF5C82;
+}
+
+.menu ul .menu5 {
+    z-index: 2;
+}
+
+.menu ul .menu5 .icon {
+    background-color: #FF85A1;
+}
