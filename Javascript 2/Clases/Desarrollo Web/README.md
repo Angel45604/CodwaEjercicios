@@ -156,3 +156,21 @@ console.log('Antes')
 doSomething()
 console.log('Despues')
 ```
+## OneDrive API
+Subida de archivos a OneDrive mediante Microsoft Graph y uploadSessions
+```js
+let uploadSession = await fetchData(apiURL, 'POST', 
+        new Headers({
+            'Authorization': `bearer ${token}`,
+            'Content-Type': 'application/json'
+        }), JSON.stringify({
+            "item": {
+                "@microsoft.graph.conflictBehavior": "rename"
+            }
+}))
+let response = await fetchData(uploadSession.uploadUrl, 'PUT', new Headers({
+    'Authorization': `bearer ${token}`,
+    'Content-type': file.files[0].type,
+    'Content-length': file.files[0].size 
+}), file.files[0])
+```
