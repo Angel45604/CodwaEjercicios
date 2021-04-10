@@ -87,3 +87,6 @@ Clon de [Tumblr](https://www.tumblr.com)
     top: 69px;
 }
 ```
+## Ahorcado
+![](https://user-images.githubusercontent.com/20376969/114278420-6a09da80-99f5-11eb-9d24-c39eb63803dc.png)
+Juego del ahorcado hecho con HTML, CSS y JS
