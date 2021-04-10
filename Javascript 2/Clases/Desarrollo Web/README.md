@@ -102,3 +102,57 @@ Pregúntale cosas al señor de las tinieblas
 ## Animaciones
 ![](https://user-images.githubusercontent.com/20376969/114278762-dfc27600-99f6-11eb-8bb4-6309bace903e.gif)
 Ejercicios de animaciones con CSS y Web Animations API
+
+## Asincronismo
+Ejercicios y ejemplos de asincronismo en JavaScript
+### Callbacks
+```js
+function suma(num1, num2) {
+    console.log('dentro de suma')
+    return num1 + num2
+}
+
+function calcular(num1, num2, callback) {
+    console.log('haciendo calculo...')
+    return callback(num1, num2)
+}
+console.log(calcular(3, 1, suma))
+```
+### Promesas
+```js
+const somethingWillHappen = () => {
+    return new Promise((resolve, reject) => {
+        if(true) {
+            resolve('Se cumplió la promesa')
+        } else {
+            reject('NO se cumplió la promesa :(')
+        }
+    })
+}
+somethingWillHappen().then(response => {
+    console.log(response)
+}).catch(err => {
+    console.error(err)
+})
+```
+### Async-Await
+```js
+const doSomethingAsync = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+        ? setTimeout(() => resolve('Hizo algo'), 3000)
+        : reject(new Error('Error de prueba'))
+    })
+}
+const doSomething = async () => {
+    try {
+        const something  =  await doSomethingAsync()
+        console.log(something)
+    } catch (error) {
+        console.error(error)
+    }
+}
+console.log('Antes')
+doSomething()
+console.log('Despues')
+```
