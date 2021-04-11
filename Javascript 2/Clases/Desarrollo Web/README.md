@@ -174,3 +174,33 @@ let response = await fetchData(uploadSession.uploadUrl, 'PUT', new Headers({
     'Content-length': file.files[0].size 
 }), file.files[0])
 ```
+## SWAPI
+Peticiones recursivas [Swapi](https://www.swapi.tech/)
+```js
+const iterateProperties = (obj) => { // :)
+    let ul = document.createElement('ul')
+    for(let k in obj) {
+        if(k == 'url')
+            continue
+        let li = document.createElement('li')
+        let b = document.createElement('b')
+        b.textContent = k
+        li.append(b)
+        let a = null
+        if(validURL(obj[k])) {
+            a = document.createElement('a')
+            a.href = '#'
+            a.textContent = '...'
+            a.onclick = async () => {
+                let response = await fetchData(obj[k])
+                let childUl = iterateProperties(response.result.properties)
+                a.replaceWith(childUl)
+            }
+        }
+        let liText = a || `: ${obj[k]}`
+        li.append(liText)
+        ul.append(li)
+    }
+    return ul
+}
+```
